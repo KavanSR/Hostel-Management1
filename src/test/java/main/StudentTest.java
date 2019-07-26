@@ -14,7 +14,7 @@ public class StudentTest {
 	@SuppressWarnings("static-access")
 	@Test
 	public void studentNameTest() throws IOException {
-		boolean chk = true;
+		boolean chk = false;
 		h	= new Hostel();
 		
 		BufferedWriter out = new BufferedWriter(new FileWriter("hostel.txt",true));
@@ -43,7 +43,7 @@ public class StudentTest {
 	@Test
 	public void studentDuplicacyTest() throws IOException{
 //		boolean chk = true;
-		assertEquals(false,h.verifyName("abcdef"));
+		assertEquals(true,h.verifyName("abcdef"));
 	}
 
 
